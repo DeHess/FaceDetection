@@ -14,4 +14,11 @@ dfs = DeepFace.find(
   db_path = "C:/Users/nathh/GitHub/FaceDetection",
 )
 
-print(dfs)
+#print(dfs)
+
+objs = DeepFace.analyze(
+  img_path = "gf1.jpg", 
+  actions = ['age', 'gender', 'race', 'emotion'],
+)
+
+print(objs)
