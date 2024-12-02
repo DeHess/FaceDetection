@@ -1,12 +1,12 @@
 from deepface import DeepFace
 
 result = DeepFace.verify(
-  img1_path = "gf1.jpg",
-  img2_path = "gf4.jpg",
+  img1_path = "me3.jpg",
+  img2_path = "me4.jpg",
   enforce_detection=False
 )
 
-#print(str(result))
+print(str(result))
 
 
 dfs = DeepFace.find(
@@ -17,8 +17,8 @@ dfs = DeepFace.find(
 #print(dfs)
 
 objs = DeepFace.analyze(
-  img_path = "gf1.jpg", 
+  img_path = "gf3.jpg", 
   actions = ['age', 'gender', 'race', 'emotion'],
 )
 
-print(objs)
+#print(objs)
